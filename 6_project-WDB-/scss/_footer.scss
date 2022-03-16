@@ -1,0 +1,21 @@
+footer {
+  width: 100%;
+  height: auto;
+  background: #222222;
+  .wrapper {
+    width: 76%;
+    margin: 0 auto;
+    .social {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      img {
+        margin-left: 12px;
+      }
+      img:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
