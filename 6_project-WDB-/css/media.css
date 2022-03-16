@@ -1,0 +1,107 @@
+.header .logo_menu .menu [type="checkbox"] {
+  display: none;
+}
+.header .logo_menu .menu label.toggleMenu {
+  color: #fff;
+  display: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  position: relative;
+}
+.header .logo_menu .menu label.toggleMenu .fa {
+position: absolute;
+top: 15px;
+left: 17px;
+}
+@media all and (max-width: 800px) {
+  .menu {
+    overflow: hidden;
+  }
+  .header .logo_menu .menu ul {
+    display: none;
+    flex-direction: column;
+  }
+  .header .logo_menu .menu label.toggleMenu {
+    display: block;
+  }
+  .header .logo_menu .logo {
+    padding-right: 79%;
+    padding-top: 18px;
+  }
+  .header .logo_menu .logo img {
+    width: 50px;
+    padding: 0;
+  }
+  .header .logo_menu .menu {
+    position: absolute;
+  }
+   input.toggleMenu:checked + label.toggleMenu {
+    background: #;
+    color: #000;
+  }
+  input.toggleMenu:checked ~ menu {
+    margin: 0;
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header .logo_menu .menu [type="checkbox"] {
+  display: none;
+}
+.header .logo_menu .menu label .toggleMenu {
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+.header .logo_menu .menu label .toggleMenu .fa {
+  position: absolute;
+}
+@media all and (max-width: 800px) {
+  .header .logo_menu .menu {
+    overflow: hidden;
+  }
+  .header .logo_menu .menu ul {
+    display: none;
+  }
+  .header .logo_menu .menu label .toggleMenu {
+    display: block;
+  }
+  input .toggleMenu:checked + label .toggleMenu {
+    color: #dfdfdf;
+  }
+  input .toggleMenu:checked ~ ul {
+    display: block;
+  }
+} */
