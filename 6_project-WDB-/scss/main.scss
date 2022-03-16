@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+// h1:after {
+//   content: "";
+//   display: block;
+//   margin: 0 auto;
+//   width: 100px;
+//   margin-top: 30px;
+//   border-bottom: 3px solid #fcac45;
+// }
+main {
+}
+// .wrapper {
+//   width: 76%;
+//   margin: 0 auto;
+// }
+
+@import 'header';
+@import 'about';
+@import 'team';
+@import 'services';
+@import 'clients';
+@import 'portfolio';
+@import 'testimonials';
+@import 'contact';
+@import 'footer';
+
+
+
+
+@media screen and (max-width: 1290px) {
+  nav {
+    margin-left: 16%;
+  }
+}
+@media screen and (max-width: 1115px) {
+  nav {
+    margin-left: 6%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .menu_trigger {
+    display:block;
+    font-size: 25px;
+    // float: right;
+    // margin-right: 12%;
+    margin: -7px 20px 0 0;
+    text-align: right;
+    position: relative;
+    padding: 0;
+  }
+  // .menu_trigger:hover {
+  //   border-bottom: 3px solid #fcac45;
+  // }
+  nav ul li {
+    display:block;
+  }
+  nav ul {
+    display:none;
+  }
+  main {
+    .WELCOME {
+      .main_welcome {
+        padding: 50px 0 50px 0;
+        p {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+    .about {
+      .main_about {
+        flex-direction: column;
+        .about_left {
+          .mw-100 {
+            max-width: 100%;
+          }
+        }
+        .about_right {
+          text-align: center;
+          margin-left: 0;
+          li {
+            text-align: left;
+            font-size: 14px;
+          }
+          h1 {
+            margin-top: 20px;
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .team {
+      .main_team {
+        h1 {
+          font-size: 30px;
+        }
+        .team_cards {
+          // flex-direction: column;
+          grid-template-columns: auto;
+          padding: 0 25% 0 25%;
+        }
+      }
+    }
+    .services {
+      .main_services {
+        .services_cards {
+          grid-template-columns: auto;
+          padding: 0 25% 0 25%;
+          .services_card {
+
+          }
+        }
+      }
+    }
+    .portfolio {
+      .main_work {
+        .gallery {
+          .line1 img:not(:first-child) {
+            display: none;
+          }
+          .line2 img:not(:first-child) {
+            display: none;
+          }
+          .line3 img:not(:first-child) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    .contact_wrapper {
+      width: 100%;
+      p {
+        padding: 0 10px 0 10px;
+      }
+      form {
+        .form_inputs {
+          width: 300px;
+          display: block;
+          padding: 10px;
+          p {
+            width: 250px;
+            justify-content: space-between;
+            padding: 5px;
+            input {
+              width: 200px;
+            }
+          }
+        }
+        p {
+          padding: 10px;
+          // width: 400px;
+        }
+        textarea {
+          width: 90%;
+          margin: 15px;
+        }
+        .button_block {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

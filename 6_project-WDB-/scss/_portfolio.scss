@@ -1,0 +1,30 @@
+.portfolio {
+  .main_work {
+    width: 76%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    h1 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    h1:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      margin-top: 30px;
+      border-bottom: 3px solid #fcac45;
+    }
+    p {
+      margin-bottom: 175px;
+      color: #6c6c6c;
+    }
+    img {
+      padding: 3px;
+    }
+    img:hover {
+      opacity: 0.9;
+    }
+  }
+}

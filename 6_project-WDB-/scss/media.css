@@ -1,0 +1,15 @@
+.menu [type="checkbox"] {
+  display: none;
+}
+.menu label .toggleMenu {
+  color: #fff;
+  display: block;
+}
+@media all and (max-width: 800px) {
+  .menu {
+    overflow: hidden;
+  }
+  .menu ul {
+    display: block;
+  }
+}
